@@ -1,0 +1,23 @@
+server:
+  port: 9100
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  #  profiles:
+  #    active: dev
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/websocket_msg?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #type: com.zaxxer.hikari.HikariDataSource
+
+  thymeleaf:
+    prefix: classpath:/templates
+    mode: HTML
+    encoding: utf-8
+    cache: false
+    servlet:
+      content-type: text/html
+
+
